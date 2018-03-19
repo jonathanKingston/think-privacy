@@ -11,6 +11,15 @@
   "options_ui": {
     "page": "options.html"
   },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "browser_action": {
+    "default_title": "Configure Firefox privacy",
+    "default_icon": {
+      "96": "logo.svg"
+    }
+  },
   "permissions": [
     "<all_urls>",
     "storage",
