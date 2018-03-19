@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form>
+  <fieldset id="privacy">
+    <legend>Privacy</legend>
+    <fieldset id="services">
+      <legend>Services</legend>
+      <label>Password saving <input type="checkbox" id="passwordSavingEnabled" /></label><br />
+    </fieldset>
+  
+    <fieldset id="network">
+      <legend>Network</legend>
+      <label>Network prediction <input type="checkbox" id="networkPredictionEnabled" /></label><br />
+      <label>Peer connection <input type="checkbox" id="peerConnectionEnabled" /></label><br />
+      <label>Web RTC IP Policy
+        <select id="webRTCIPHandlingPolicy">
+          <option value="default">Default</option>
+          <option value="default_public_and_private_interfaces">Public and private</option>
+          <option value="default_public_interface_only">Public</option>
+          <option value="disable_non_proxied_udp">Disable non proxied UDP</option>
+        </select>
+      </label><br />
+    </fieldset>
+  
+    <fieldset id="websites">
+      <legend>Websites</legend>
+      <label>Cookies
+        <select id="cookieConfig.behavior">
+          <option value="allow_all">Accept all cookies</option>
+          <option value="reject_all">Reject all cookies</option>
+          <option value="reject_third_party">Reject all third-party cookies</option>
+          <option value="allow_visited">Allow visited third parties</option>
+        </select>
+      </label><br />
+      <label>Session cookies <input type="checkbox" id="cookieConfig.nonPersistentCookies" /></label><br />
+      <label>First Party Isolate <input type="checkbox" id="firstPartyIsolate" /></label><br />
+      <label>Link Ping <input type="checkbox" id="hyperlinkAuditingEnabled" /></label><br />
+      <label>Referrers enabled <input type="checkbox" id="referrersEnabled" /></label><br />
+      <label>Resist fingerprinting <input type="checkbox" id="resistFingerprinting" /></label><br />
+      <label>Tracking protection mode
+        <select id="trackingProtectionMode">
+          <option value="always">Tracking protection</option>
+          <option value="never">No tracking protection</option>
+          <option value="private_browsing">Private browsing tracking protection</option>
+        </select>
+      </label><br />
+    </fieldset>
+  </fieldset>
+
+  <br />
+
+  <fieldset>
+    <legend>Link modification</legend>
+    <p>Page modifications of links.</p>
+    <fieldset>
+      <legend>Target links</legend>
+      <p>Prevent links that open in a new window from keeping references to the previous page.</p>
+      <label>No opener <input type="checkbox" id="targetLinks.noopener" /></label><br />
+      <label>No referrer <input type="checkbox" id="targetLinks.noreferrer" /></label><br />
+    </fieldset>
+    <fieldset>
+      <legend>External links</legend>
+      <p>Prevent all external links from keeping a reference to the previous page.</p>
+      <label>No referrer <input type="checkbox" id="externalLinks.noreferrer" /></label><br />
+    </fieldset>
+  </fieldset>
+</form>
+<script src="js/options.js"></script>

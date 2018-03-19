@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 2,
+  "name": "Think Privacy",
+  "version": "1.0",
+  "author": "Jonathan Kingston",
+  "description": "Change Firefox to be more private.",
+  "icons": {
+    "96": "logo.svg"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage",
+    "privacy"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/main.js"]
+    }
+  ]
+}
