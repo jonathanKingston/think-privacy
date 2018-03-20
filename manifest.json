@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Think Privacy",
-  "version": "1.0",
+  "version": "1.0.1",
   "author": "Jonathan Kingston",
   "description": "Change Firefox to be more private.",
   "icons": {

@@ -41,4 +41,4 @@ async function check() {
 }
 
 check();
-window.onload = check;
+document.addEventListener("load", check);
